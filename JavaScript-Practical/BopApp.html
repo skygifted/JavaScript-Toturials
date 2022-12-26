@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+     <style>
+            body{
+     
+                flex: flex;
+              justify-content: center;
+              align-items: center;
+
+            }
+
+        .BopContainer{
+              
+              background-color: aqua;
+              width: 30rem;
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+             
+        }
+        .bop{
+             margin-top: 3rem;
+             margin-left: 4rem;
+            
+        }
+        .btns{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;  
+              margin-top: 2em;
+        }
+
+        button{
+
+             margin-left: 2em;
+        }
+     </style>
+</head>
+<body>
+    
+
+
+
+
+
+      <div class="BopContainer">
+          
+            
+
+          <img id="Bop" class="bop" src="off.gif" alt="">
+
+          <div class="btns">
+            <button onclick="FuncOff()">OFF</button>
+            <button onclick="FuncOn()">ON</button>
+          </div>
+
+      </div>
+
+
+    
+    <script>
+    
+       
+    function FuncOff(){
+      
+        document.getElementById('Bop').src="off.gif"
+
+    }
+
+    function FuncOn(){
+
+        document.getElementById('Bop').src = "on.gif"
+    }
+
+
+
+    </script>
+
+</body>
+</html>
